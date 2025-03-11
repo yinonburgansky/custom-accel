@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <requires lib="Adw" version="1.0"/>
+  <template class="ApplyAccelSettingsDialog" parent="AdwAlertDialog">
+    <property name="heading">Restore Acceleration Settings</property>
+    <property name="default-response">keep</property>
+    <property name="close-response">restore</property>
+    <responses>
+      <response id="keep">Keep</response>
+      <response id="restore">Restore</response>
+    </responses>
+  </template>
+</interface>

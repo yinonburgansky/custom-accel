@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "meson: configure",
+            "type": "shell",
+            "command": "meson setup --reconfigure build --buildtype debug",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "meson: build",
+            "type": "shell",
+            "command": "meson compile -C .",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn": "meson: configure",
+            "options": {
+                "cwd": "${workspaceFolder}/build"
+            }
+        }
+    ]
+}

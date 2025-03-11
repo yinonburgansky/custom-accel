@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug custom-accel",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/src/custom-accel",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [{"name": "GSK_RENDERER", "value": "ngl"}],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "meson: build",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "logging": {
+                "trace": true,
+                "traceResponse": true,
+                "engineLogging": true
+            },
+            "visualizerFile": "${workspaceFolder}/.vscode/gdb_visualizers/gdb_visualizer.py"
+        }
+    ]
+}

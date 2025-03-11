@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=com.github.yinonburgansky.CustomAccel
+Exec=@bindir@/custom-accel --gapplication-service

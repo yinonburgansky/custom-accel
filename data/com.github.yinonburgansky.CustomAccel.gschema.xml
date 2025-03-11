@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="custom-accel">
+	<schema id="com.github.yinonburgansky.CustomAccel" path="/com/github/yinonburgansky/CustomAccel/">
+	</schema>
+</schemalist>

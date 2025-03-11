@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=custom-accel
+Exec=custom-accel
+Icon=com.github.yinonburgansky.CustomAccel
+Terminal=false
+Type=Application
+Categories=Utility;
+Keywords=GTK;
+StartupNotify=true
+DBusActivatable=true
