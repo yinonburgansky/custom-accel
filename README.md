@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="icon" width="128" height="128" src="./data/icons/hicolor/scalable/apps/com.github.yinonburgansky.CustomAccel.png">
+  <img alt="icon" width="128" height="128" src="./data/icons/hicolor/scalable/apps/io.github.yinonburgansky.CustomAccel.png">
 </p>
 
 # Custom Accel
@@ -32,7 +32,7 @@ Visualize your device speed on the plot and fine-tune the acceleration curve to 
 ## Build
 
 ```bash
-flatpak-builder --force-clean build com.github.yinonburgansky.CustomAccel.json
+flatpak-builder --force-clean build io.github.yinonburgansky.CustomAccel.json
 ./build/files/bin/custom-accel
 ```
 

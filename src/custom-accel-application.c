@@ -81,7 +81,7 @@ custom_accel_application_about_action (GSimpleAction *action,
 
 	adw_show_about_dialog (GTK_WIDGET (window),
 	                       "application-name", "Custom Accel",
-	                       "application-icon", "com.github.yinonburgansky.CustomAccel",
+	                       "application-icon", "io.github.yinonburgansky.CustomAccel",
 	                       "developer-name", "Yinon Burgansky",
 	                       "translator-credits", _("translator-credits"),
 	                       "version", "0.1.0",

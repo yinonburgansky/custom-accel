@@ -1,8 +1,8 @@
 # List of source files containing translatable strings.
 # Please keep this file sorted alphabetically.
-data/com.github.yinonburgansky.CustomAccel.desktop.in
-data/com.github.yinonburgansky.CustomAccel.metainfo.xml.in
-data/com.github.yinonburgansky.CustomAccel.gschema.xml
+data/io.github.yinonburgansky.CustomAccel.desktop.in
+data/io.github.yinonburgansky.CustomAccel.metainfo.xml.in
+data/io.github.yinonburgansky.CustomAccel.gschema.xml
 src/main.c
 src/custom-accel-window.c
 src/custom-accel-window.ui

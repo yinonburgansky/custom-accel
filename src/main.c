@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 	bind_textdomain_codeset(GETTEXT_PACKAGE, "UTF-8");
 	textdomain(GETTEXT_PACKAGE);
 
-	app = custom_accel_application_new("com.github.yinonburgansky.CustomAccel", G_APPLICATION_DEFAULT_FLAGS);
+	app = custom_accel_application_new("io.github.yinonburgansky.CustomAccel", G_APPLICATION_DEFAULT_FLAGS);
 	ret = g_application_run(G_APPLICATION(app), argc, argv);
 
 	return ret;

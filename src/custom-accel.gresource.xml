@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/com/github/yinonburgansky/CustomAccel">
+  <gresource prefix="/io/github/yinonburgansky/CustomAccel">
     <file preprocess="xml-stripblanks">custom-accel-window.ui</file>
     <file preprocess="xml-stripblanks">apply-accel-settings-dialog.ui</file>
     <file preprocess="xml-stripblanks">gtk/help-overlay.ui</file>

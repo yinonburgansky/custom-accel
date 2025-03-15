@@ -86,7 +86,7 @@ static void on_dialog_response(AdwAlertDialog *dialog, const char *response_id, 
 static void apply_accel_settings_dialog_class_init(ApplyAccelSettingsDialogClass *klass)
 {
     GtkWidgetClass *widget_class = GTK_WIDGET_CLASS(klass);
-    gtk_widget_class_set_template_from_resource(widget_class, "/com/github/yinonburgansky/CustomAccel/apply-accel-settings-dialog.ui");
+    gtk_widget_class_set_template_from_resource(widget_class, "/io/github/yinonburgansky/CustomAccel/apply-accel-settings-dialog.ui");
 }
 
 static void apply_accel_settings_dialog_init(ApplyAccelSettingsDialog *self)

@@ -54,7 +54,7 @@ custom_accel_window_class_init(CustomAccelWindowClass *klass)
 	// Register the PlotWidget type
 	g_type_ensure(PLOT_TYPE_WIDGET);
 
-	gtk_widget_class_set_template_from_resource(widget_class, "/com/github/yinonburgansky/CustomAccel/custom-accel-window.ui");
+	gtk_widget_class_set_template_from_resource(widget_class, "/io/github/yinonburgansky/CustomAccel/custom-accel-window.ui");
 	gtk_widget_class_bind_template_child(widget_class, CustomAccelWindow, plot_widget);
 	gtk_widget_class_bind_template_child(widget_class, CustomAccelWindow, device_dropdown);
 	gtk_widget_class_bind_template_child(widget_class, CustomAccelWindow, movement_type_button);
