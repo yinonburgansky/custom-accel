@@ -24,6 +24,26 @@
             "options": {
                 "cwd": "${workspaceFolder}/build"
             }
+        },
+        {
+            "label": "flatpak: build",
+            "type": "shell",
+            "command": "flatpak-builder --force-clean --disable-cache=custom-accel build com.github.yinonburgansky.CustomAccel.json",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "flatpak: install",
+            "type": "shell",
+            "command": "flatpak-builder --user --install --force-clean --disable-cache=custom-accel build com.github.yinonburgansky.CustomAccel.json",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
         }
     ]
 }

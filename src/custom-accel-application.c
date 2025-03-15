@@ -80,13 +80,14 @@ custom_accel_application_about_action (GSimpleAction *action,
 	window = gtk_application_get_active_window (GTK_APPLICATION (self));
 
 	adw_show_about_dialog (GTK_WIDGET (window),
-	                       "application-name", "custom-accel",
+	                       "application-name", "Custom Accel",
 	                       "application-icon", "com.github.yinonburgansky.CustomAccel",
 	                       "developer-name", "Yinon Burgansky",
 	                       "translator-credits", _("translator-credits"),
 	                       "version", "0.1.0",
 	                       "developers", developers,
 	                       "copyright", "© 2025 Yinon Burgansky",
+						   "website", "https://github.com/yinonburgansky/custom-accel",
 	                       NULL);
 }
 

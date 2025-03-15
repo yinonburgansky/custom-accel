@@ -1,15 +1,17 @@
 {
     "id": "com.github.yinonburgansky.CustomAccel",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "master",
+    "runtime-version": "47",
     "sdk": "org.gnome.Sdk",
     "command": "custom-accel",
     "finish-args": [
         "--share=network",
         "--share=ipc",
+        "--socket=wayland",
         "--socket=fallback-x11",
         "--device=dri",
-        "--socket=wayland"
+        "--device=input",
+        "--filesystem=/run/udev:ro"
     ],
     "cleanup": [
         "/include",
@@ -24,13 +26,41 @@
     ],
     "modules": [
         {
+            "name": "mtdev",
+            "buildsystem": "autotools",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://bitmath.se/org/code/mtdev/mtdev-1.1.7.tar.gz",
+                    "sha256": "a55bd02a9af4dd266c0042ec608744fff3a017577614c057da09f1f4566ea32c"
+                }
+            ]
+        },
+        {
+            "name": "libinput",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Ddebug-gui=false",
+                "-Ddocumentation=false",
+                "-Dlibwacom=false",
+                "-Dtests=false"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.27.1/libinput-1.27.1.tar.gz",
+                    "sha256": "f6d623dd8230db337a6457645ebca96b9d4788a56385463bb14b8174910dfe23"
+                }
+            ]
+        },
+        {
             "name": "custom-accel",
             "builddir": true,
             "buildsystem": "meson",
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://github.com/yinonburgansky/custom-accel.git"
+                    "type": "dir",
+                    "path": "."
                 }
             ]
         }

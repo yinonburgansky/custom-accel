@@ -5,11 +5,16 @@
             "name": "Debug custom-accel",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/src/custom-accel",
+            "program": "${workspaceFolder}/build/files/bin/custom-accel",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
-            "environment": [{"name": "GSK_RENDERER", "value": "ngl"}],
+            "environment": [
+                {
+                    "name": "GSK_RENDERER",
+                    "value": "ngl"
+                }
+            ],
             "externalConsole": false,
             "MIMode": "gdb",
             "setupCommands": [
@@ -19,7 +24,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "meson: build",
+            "preLaunchTask": "flatpak: build",
             "miDebuggerPath": "/usr/bin/gdb",
             "logging": {
                 "trace": true,
