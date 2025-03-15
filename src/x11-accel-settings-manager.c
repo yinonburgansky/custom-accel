@@ -207,9 +207,7 @@ static gboolean x11_get_accel_function(Display *display, int device_id, CustomAc
     Atom accel_step_atom;
     x11_get_accel_function_atoms(display, &accel_points_atom, &accel_step_atom, movement_type);
 
-    int points_size;
-    gboolean success = get_atom_property_double_array(display, device_id, accel_points_atom, custom_accel_function->points, 64, &points_size);
-    custom_accel_function->npoints = points_size;
+    gboolean success = get_atom_property_double_array(display, device_id, accel_points_atom, custom_accel_function->points, 64, &custom_accel_function->npoints);
     success = success && get_atom_property_double(display, device_id, accel_step_atom, &custom_accel_function->step);
     return success;
 }
