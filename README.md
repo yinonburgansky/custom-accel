@@ -18,7 +18,7 @@ Visualize your device speed on the plot and fine-tune the acceleration curve to 
 3. Adjust the top speed multiplier to modify the pointer's top speed relative to your mouse's top speed. Drag the bezier curve handles to modify the curve.
 4. Click the "Apply Settings" button and move your mouse around. A dialog will appear asking if you want to keep or restore the settings. It will automatically restore the settings after 10 seconds.
 5. Repeat until you are satisfied with the results, then click the "Keep settings" button.
-6. Due to [issue](https://github.com/yinonburgansky/custom-accel/issues/2): To ensure your acceleration settings persist after a restart, manually copy the settings using `xinput list-props "device name"` and write the settings to `/usr/share/X11/xorg.conf.d/40-libinput.conf`.
+6. Due to [issue](https://github.com/yinonburgansky/custom-accel/issues/2): To ensure your acceleration settings persist after a restart, manually copy the settings using `xinput list-props "device name"` and write the settings to `/etc/X11/xorg.conf.d/30-libinput.conf`.
 
 ## Recommendations
 
